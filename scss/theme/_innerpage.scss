@@ -1,0 +1,335 @@
+.banner{
+    min-height: 470px;
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:$white;
+    @include media-breakpoint-up(lg) {
+        min-height: 750px; 
+    }
+    h1{
+        color:$white;
+        font-size: 45px;
+        margin-bottom: 20px;
+        @include media-breakpoint-up(lg) {
+            font-size: 65px;
+        }
+    }
+}
+.father-list{
+    padding: 30px 0 ;
+    background: url(../images/father-bg.png);
+    background-size: cover;
+    @include media-breakpoint-up(lg) {
+        padding: 60px 0 106px;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .txt-main{
+        max-width: 683px;
+        margin: 0 auto;
+    }
+    ul{
+        margin-top: 20px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 70px;
+        }
+        li{
+            text-align: center;
+            margin-bottom: 20px;
+            @include media-breakpoint-up(lg) {
+
+            }
+        }
+    }
+    .txt{
+        margin-top: 10px;
+        text-align: center;
+        color:$primary;
+        @include media-breakpoint-up(lg) {
+            margin-top: 40px; 
+        }
+    }
+}
+.news-area{
+    background: $primary;
+    padding: 30px 0;
+    @include media-breakpoint-up(lg) {
+        padding: 90px 0;
+    }
+    h2{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    p{
+        color: #E9E9E9;
+    }
+    .txt{
+        padding: 46px 17px;
+    }
+    .slide{
+        padding: 0 20px;
+        min-width: 280px;
+        margin-top: 30px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+        }
+    }
+    .slider-bx{
+        padding: 4px;
+        background-color: $white;
+        h3{
+            font-weight: bold;
+            font-size: 16px;
+            color:$primary;
+            margin-bottom: 15px;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            font-size: 14px;
+            color: #777777;
+            line-height: 20px;
+            margin-bottom: 50px;
+        }
+        a{
+            font-weight: 600;
+            font-size: 14px;
+            color: $primary;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .slick-dots{
+        li{
+            margin: 0 5px;
+            width: auto;
+            height: auto;
+            opacity: 0.3;
+            &.slick-active{
+                opacity: 1;
+            }
+        }
+        button{
+            background: #fff;
+            width: 29px;
+            height: 2px;
+            padding: 0;
+            border-radius: 2px;
+            
+        }
+    }
+    .view{
+        @include media-breakpoint-up(lg) {
+            margin-top: 70px;
+        }
+    }
+}
+.matrimonial-area{
+    padding: 30px 0;
+    @include media-breakpoint-up(lg) {
+        padding: 60px 0;
+    }
+    .txt-main{
+        max-width: 582px;
+        margin: 0 auto;
+        
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 70px;
+        }
+    }
+    .box{
+        background: $white;
+        box-shadow: -20px 0px 30px rgba(0, 0, 0, 0.05);
+        padding: 27px 22px;
+        border:1px solid $white; 
+        position: relative;
+        margin-top: 20px;
+        @include transition();
+        &:hover{
+            border:1px solid $primary;  
+        }
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+        }
+        .bride-btn{
+            background: $primary;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 2px;
+            width: 85px;
+            height: 40px;
+            position: relative;
+            color:$white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            margin-bottom:40px;
+            &.groom{
+                background-color: #4F4F4F;
+            }
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .date{
+            font-weight: 700;
+            color: $primary;
+            margin-bottom: 15px;
+        }
+        .more{
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        p{
+            color: #777777;
+        }
+    }
+    .view{
+        width: 150px;
+        height:50px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 94px;
+        }
+    }
+    
+}
+.mission-area{
+    background: $primary;
+    padding: 30px 0;
+    color: $white;
+    @include media-breakpoint-up(lg) {
+        padding: 114px 0;
+    }
+    h2{
+        color:$white;
+        margin-bottom: 20px;
+    }
+    .txt-sm{
+        max-width: 494px;
+        margin-bottom: 30px;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 74px;
+        }
+    }
+}
+.pre-marriage{
+    padding: 30px 0;
+    @include media-breakpoint-up(lg) {
+        padding: 60px 0 117px;  
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .box{
+        background: $white;
+        box-shadow: -20px 0px 30px rgba(0, 0, 0, 0.05);
+        padding: 27px 22px;
+        border:1px solid $white; 
+        margin-top: 20px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+        }
+        &:hover{
+            border:1px solid $primary;  
+        }
+        .bride-btn{
+            background: $primary;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 2px;
+            width: 132px;
+            height: 40px;
+            position: relative;
+            color:$white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            margin-bottom:30px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        p{
+            color: #777777;
+            margin-bottom: 0;
+        }
+    }
+    .txt-main{
+        max-width: 823px;
+        margin: 0 auto;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 70px;
+        }
+    }
+}
+.webinfo{
+    background: $primary;
+    color: #E9E9E9;
+    h2{
+        color: $white;
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    .left-cnt,.right-cnt{
+        padding-top: 30px; 
+        padding-bottom: 30px;
+        @include media-breakpoint-up(lg) {
+            padding-top: 60px; 
+            padding-bottom: 60px;
+        }
+        p{
+            text-decoration: underline;
+            margin-bottom: 26px;
+        }
+    }
+    .right-cnt{
+        @include media-breakpoint-up(lg) {
+            padding-left: 30px;
+        }
+    }
+    .txt{
+        margin-bottom: 28px;
+    }
+    .image-sc{
+      background: url('../images/parish.png'); 
+      background-position: center;
+      height: 100%;
+      width:100%;
+      background-size: cover;
+      min-height: 470px;
+      @include media-breakpoint-up(lg) {
+          
+      }
+    }
+}
+.links{
+    padding: 30px 0px;
+    background: $white;
+    @include media-breakpoint-up(lg) {
+        padding: 60px 80px;  
+    }
+    ul{
+        li{
+            margin-bottom: 10px;
+        }
+    }
+    a{
+        color: #777777;
+    }
+}
